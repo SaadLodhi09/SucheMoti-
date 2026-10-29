@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suche Moti — Timeless Elegance, Purely Yours | Luxury Pearl Jewelry Pakistan</title>
+  
+  <!-- SEO & Brand Metadata -->
+  <meta name="description" content="Suche Moti is a premier Pakistani jewelry atelier bridging traditional artistry with modern digital luxury. Authentic baroque, freshwater, and South Sea pearls handcrafted in Okara, Lahore, and Karachi.">
+  <meta name="keywords" content="Suche Moti, Pakistani jewelry, real pearls, freshwater pearl choker, baroque pearls, bridal jewelry Lahore, Karachi, Okara, men's kada, jhumkas">
+  
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="Suche Moti — Timeless Elegance, Purely Yours">
+  <meta property="og:description" content="Authentic handcrafted pearl jewelry & festive wear from Pakistan. Discover royal chokers, baroque pendants, and bridal heirlooms.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Core Stylesheets (Version 3 Cache-Bust) -->
+  <link rel="stylesheet" href="css/variables.css?v=3">
+  <link rel="stylesheet" href="css/base.css?v=3">
+  <link rel="stylesheet" href="css/animations.css?v=3">
+  <link rel="stylesheet" href="css/components.css?v=3">
+  <link rel="stylesheet" href="css/main.css?v=3">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT TICKER (Minimal & Centered, Matching Img 2)
+       ========================================================================= -->
+  <div class="top-ticker" role="region" aria-label="Announcement Bar">
+    <div class="top-ticker-text">
+      <span class="gold-bullet">✦</span>
+      <span>COMPLIMENTARY INSURED EXPRESS DELIVERY ACROSS PAKISTAN ON ALL ORDERS OVER PKR 3,000</span>
+      <span class="gold-bullet">✦</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. STICKY MINIMAL NAVIGATION (Matching Img 2 3-Column Centered Logo Layout)
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      
+      <!-- Mobile Hamburger Button (Visible on mobile only) -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <!-- Left Navigation Links (Desktop) -->
+      <nav class="nav-left-links" aria-label="Main Navigation">
+        <a href="#bestsellers" class="nav-link">NEW IN</a>
+        <a href="#featured-collections" class="nav-link">COLLECTIONS</a>
+        <a href="#lookbook" class="nav-link">LOOKBOOK</a>
+        <a href="#about-craftsmanship" class="nav-link">ABOUT</a>
+      </nav>
+
+      <!-- Center Official Brand Logo (From User Uploaded Asset) -->
+      <a href="#hero" class="nav-center-logo" aria-label="Suche Moti Home">
+        <img src="assets/images/logo-text.png" alt="Suche Moti Fine Jewelry" height="48">
+      </a>
+
+      <!-- Right Utility Actions -->
+      <div class="nav-right-utilities">
+        <!-- Currency Switcher Toggle -->
+        <button type="button" class="currency-toggle-btn" id="currency-toggle" aria-label="Toggle currency">
+          PKR ₨
+        </button>
+
+        <!-- Search Icon Trigger -->
+        <button type="button" class="nav-icon-btn" id="search-trigger" aria-label="Search catalog">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button type="button" class="nav-icon-btn" id="wishlist-nav-btn" aria-label="View Wishlist" onclick="document.getElementById('bestsellers').scrollIntoView();">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="nav-badge-count wishlist-badge-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag / Cart Drawer Button -->
+        <button type="button" class="nav-icon-btn" data-action="open-cart" aria-label="Open Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="nav-badge-count cart-badge-count" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-label="Navigation Menu">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo-text.png" alt="Suche Moti" height="34">
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <nav class="mobile-nav-links">
+        <a href="#bestsellers" class="mobile-link">New In & Best Sellers</a>
+        <a href="#featured-collections" class="mobile-link">The 4 Collections</a>
+        <a href="#lookbook" class="mobile-link">Royal Lookbook</a>
+        <a href="#about-craftsmanship" class="mobile-link">Our Craftsmanship</a>
+        <a href="#purity-guide" class="mobile-link">Pearl Purity Standard</a>
+        <a href="#testimonials" class="mobile-link">Customer Reviews</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <div class="mobile-currency-row">
+          <span>Currency:</span>
+          <button type="button" class="currency-toggle-btn" id="mobile-currency-btn" style="padding: 0.4rem 1rem;">PKR ₨</button>
+        </div>
+        <p style="font-size: 0.78rem; color: var(--color-slate-400); margin-top: 1rem;">
+          Complimentary insured delivery on orders over PKR 3,000 across Pakistan via TCS & Leopards.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       3. HAUTE COUTURE HERO SECTION (Matching Img 2 Layout Exactly)
+       ========================================================================= -->
+  <main id="main-content">
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-curve"></div>
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column -->
+          <div class="hero-content-col reveal-item">
+            <span class="hero-eyebrow">TIMELESS ELEGANCE. PURELY YOURS.</span>
+            <h1 class="hero-title">
+              Jewelry That<br>
+              <strong>Tells Your Story</strong>
+            </h1>
+            <p class="hero-desc">
+              Exquisite designs, ethically crafted to celebrate every moment that matters. Discover genuine freshwater pearls, royal Mughal chokers, and designer daily essentials handcrafted by master artisans in Pakistan.
+            </p>
+            <div>
+              <a href="#featured-collections" class="btn-hero-dark">
+                SHOP THE COLLECTION
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Arched Image Frame + Floating Seal Stamp (Matching Img 2) -->
+          <div class="hero-media-wrap reveal-item">
+            <div class="hero-arch-frame luster-sheen-target">
+              <img src="assets/images/hero_jewelry.jpg" alt="Suche Moti Luxury Pearl Jewelry Collection Composition" fetchpriority="high">
+            </div>
+
+            <!-- Floating Stamp Seal -->
+            <div class="hero-stamp-seal float-motion">
+              <span class="seal-icon">✦</span>
+              <span class="seal-text">TIMELESS BEAUTY<br>FINE CRAFTSMANSHIP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. BRAND TRUST & ASSURANCE MATRIX (Premium Boxed Cards as Requested in #2!)
+         ========================================================================= -->
+    <section class="trust-matrix-section" aria-label="Brand Guarantees">
+      <div class="container">
+        <div class="trust-boxes-grid">
+          
+          <div class="trust-box-card reveal-item">
+            <div class="trust-box-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <h4 class="trust-box-title">Free Nationwide Delivery</h4>
+              <p class="trust-box-desc">Complimentary insured delivery on orders over PKR 3,000 via TCS & Leopards.</p>
+            </div>
+          </div>
+
+          <div class="trust-box-card reveal-item">
+            <div class="trust-box-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4 class="trust-box-title">100% Certified Purity</h4>
+              <p class="trust-box-desc">Individual piece QC inspection with official Certificate of Pearl Authenticity.</p>
+            </div>
+          </div>
+
+          <div class="trust-box-card reveal-item">
+            <div class="trust-box-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div>
+              <h4 class="trust-box-title">3-Tier Luxury Packaging</h4>
+              <p class="trust-box-desc">Custom velvet caskets, magnetic keepsake boxes, and antique wax seals.</p>
+            </div>
+          </div>
+
+          <div class="trust-box-card reveal-item">
+            <div class="trust-box-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <h4 class="trust-box-title">Direct Atelier Pricing</h4>
+              <p class="trust-box-desc">Handcrafted in Okara, Lahore & Karachi with zero retail markups.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. FEATURED COLLECTIONS (Matching Img 2 Arched Cards with Bottom Dark Pills)
+         ========================================================================= -->
+    <section class="featured-collections-section" id="featured-collections">
+      <div class="container">
+        
+        <div class="section-header reveal-item" style="margin-bottom: 1.5rem;">
+          <span class="section-eyebrow">CURATED FOR YOU</span>
+          <h2 class="section-title">Featured Collections</h2>
+        </div>
+
+        <div class="section-diamond-divider">
+          <span class="diamond-icon">◆</span>
+        </div>
+
+        <div class="arched-collections-grid">
+          
+          <!-- Collection 1: Women's Festive -->
+          <div class="arched-collection-card reveal-item" onclick="document.querySelector('[data-category=\'festive\']')?.click(); document.getElementById('bestsellers').scrollIntoView();">
+            <div class="arched-card-media luster-sheen-target">
+              <img src="assets/images/collection_festive.jpg" alt="Women's Festive Wear" loading="lazy">
+            </div>
+            <div class="arched-card-label-bar">
+              <span>WOMEN'S FESTIVE</span>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- Collection 2: Daily Essentials -->
+          <div class="arched-collection-card reveal-item" onclick="document.querySelector('[data-category=\'daily\']')?.click(); document.getElementById('bestsellers').scrollIntoView();">
+            <div class="arched-card-media luster-sheen-target">
+              <img src="assets/images/collection_daily.jpg" alt="Daily Essentials" loading="lazy">
+            </div>
+            <div class="arched-card-label-bar">
+              <span>DAILY ESSENTIALS</span>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- Collection 3: Men's Collection -->
+          <div class="arched-collection-card reveal-item" onclick="document.querySelector('[data-category=\'mens\']')?.click(); document.getElementById('bestsellers').scrollIntoView();">
+            <div class="arched-card-media luster-sheen-target">
+              <img src="assets/images/collection_mens.jpg" alt="Men's Jewelry Collection" loading="lazy">
+            </div>
+            <div class="arched-card-label-bar">
+              <span>MEN'S EDIT</span>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- Collection 4: Pearl Specialties -->
+          <div class="arched-collection-card reveal-item" onclick="document.querySelector('[data-category=\'pearls\']')?.click(); document.getElementById('bestsellers').scrollIntoView();">
+            <div class="arched-card-media luster-sheen-target">
+              <img src="assets/images/collection_pearls.jpg" alt="Pearl Specialties" loading="lazy">
+            </div>
+            <div class="arched-card-label-bar">
+              <span>PEARL SPECIALTIES</span>
+              <span>+</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. BEST SELLERS / PRODUCT CATALOG (3 IN A ROW AS REQUESTED IN DIRECTIVE #1)
+         ========================================================================= -->
+    <section class="bestsellers-section" id="bestsellers">
+      <div class="container">
+        
+        <div class="bestsellers-header-row reveal-item">
+          <div>
+            <span class="section-eyebrow" style="margin-bottom: 0.35rem;">MOST LOVED</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Best Sellers</h2>
+          </div>
+          <a href="#bestsellers" class="view-all-link" onclick="document.querySelector('[data-category=\'all\']')?.click();">
+            VIEW ALL
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Filter Pills Bar & Sorting -->
+        <div class="catalog-controls reveal-item">
+          <div class="filter-pills" role="tablist" aria-label="Product categories">
+            <button type="button" class="filter-pill active" data-category="all" role="tab">All Creations</button>
+            <button type="button" class="filter-pill" data-category="festive" role="tab">Women's Festive</button>
+            <button type="button" class="filter-pill" data-category="daily" role="tab">Daily Essentials</button>
+            <button type="button" class="filter-pill" data-category="mens" role="tab">Men's Edit</button>
+            <button type="button" class="filter-pill" data-category="pearls" role="tab">Pearl Specialties</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <label for="catalog-sort" style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: var(--color-slate-400);">Sort:</label>
+            <select id="catalog-sort" class="sort-select" aria-label="Sort products">
+              <option value="featured">Featured Artisanal</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="new">Newest Additions</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid (3 IN A ROW - Small & Perfectly Proportioned via js/app.js) -->
+        <div class="products-grid" id="products-grid">
+          <!-- Injected via JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. THE ART OF FINE CRAFTSMANSHIP / ABOUT SECTION (POINTS IN PREMIUM BOXES AS IN #2!)
+         ========================================================================= -->
+    <section class="craftsmanship-section" id="about-craftsmanship">
+      <div class="container">
+        
+        <div class="craftsmanship-grid">
+          
+          <!-- Left Column: Story & 3 Points in Luxury Boxed Cards -->
+          <div class="reveal-item">
+            <span class="craftsmanship-eyebrow">CRAFTED WITH PURPOSE</span>
+            <h2 class="craftsmanship-title">The Art of Fine Craftsmanship</h2>
+            <p class="craftsmanship-desc">
+              Founded by <strong>Saad Lodhi</strong>, <strong>Muqaddas Hanif</strong>, and <strong>Dua Safdar</strong>, Suche Moti is a direct-to-consumer jewelry atelier based in Okara, Punjab. By partnering directly with master artisan guilds in Lahore, Karachi, and Okara, we eliminate traditional retail markups and deliver certified genuine pearl and designer jewelry directly to your doorstep.
+            </p>
+
+            <!-- 3 POINTS IN PREMIUM BOXED CARDS -->
+            <div class="craftsmanship-boxes-row">
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h4 class="craftsmanship-box-title">Ethically Sourced</h4>
+                <p class="craftsmanship-box-desc">Certified genuine freshwater & South Sea baroque pearls paired with precious anti-tarnish alloys.</p>
+              </div>
+
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h4 class="craftsmanship-box-title">Expert Craftsmanship</h4>
+                <p class="craftsmanship-box-desc">Double-knotted individually on pure silk thread by generational Pakistani master jewelers.</p>
+              </div>
+
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h4 class="craftsmanship-box-title">Timeless Quality</h4>
+                <p class="craftsmanship-box-desc">100% individual piece QC inspection and tamper-proof packaging before express delivery.</p>
+              </div>
+            </div>
+
+            <a href="#purity-guide" class="btn btn-gold btn-sm">LEARN OUR STORY &rarr;</a>
+          </div>
+
+          <!-- Right Column: Circular Artisan Photo Frame + Seal Stamp (Matching Img 2) -->
+          <div class="reveal-item" style="position: relative; display: flex; justify-content: center;">
+            <div class="craftsmanship-media-frame">
+              <img src="assets/images/collection_pearls.jpg" alt="Master jeweler hand-crafting pearl jewelry at Suche Moti atelier">
+            </div>
+
+            <div class="craftsmanship-seal-stamp float-motion">
+              <span>✦</span>
+              <span>HANDCRAFTED<br>WITH PASSION</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. INTERACTIVE LOOKBOOK (3 IMAGES IN A ROW SMALL AS REQUESTED IN #1!)
+         ========================================================================= -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">EDITORIAL CAMPAIGN</span>
+          <h2 class="section-title">Shop The Royal Looks</h2>
+          <p class="section-description">
+            Explore 3 signature curations styled by our atelier. Click the pulsating gold pins to inspect and bag pieces directly.
+          </p>
+        </div>
+
+        <!-- 3 In a Row Lookbook Cards Grid -->
+        <div class="lookbook-3col-grid reveal-item">
+          
+          <!-- Look 1: Royal Bridal -->
+          <div class="lookbook-card">
+            <div class="lookbook-media-wrap luster-sheen-target">
+              <img src="assets/images/lookbook.jpg" alt="The Royal Nizam Bridal Look" loading="lazy">
+              <!-- Hotspot Pin -->
+              <div class="hotspot-node" style="top: 45%; left: 49%;">
+                <button type="button" class="hotspot-pin" aria-label="Inspect Royal Nizam Choker">1</button>
+                <div class="hotspot-card">
+                  <h4 class="hotspot-card-title">The Royal Nizam Choker</h4>
+                  <p class="hotspot-card-price">₨ 8,500 <span style="font-size: 0.75rem; color: var(--color-slate-400);">(~$31 USD)</span></p>
+                  <button type="button" class="btn btn-obsidian btn-sm hotspot-add-btn" data-product-id="sm-001">Add to Bag</button>
+                </div>
+              </div>
+            </div>
+            <div class="lookbook-card-footer">
+              <div>
+                <h4 class="lookbook-look-title">Royal Nizam Suite</h4>
+                <span style="font-size: 0.75rem; color: var(--color-slate-400);">Mughal Bridal Curation</span>
+              </div>
+              <span class="lookbook-look-price">₨ 8,500</span>
+            </div>
+          </div>
+
+          <!-- Look 2: Daily Keshi Modernism -->
+          <div class="lookbook-card">
+            <div class="lookbook-media-wrap luster-sheen-target">
+              <img src="assets/images/collection_daily.jpg" alt="Daily Minimalist Keshi Look" loading="lazy">
+              <!-- Hotspot Pin -->
+              <div class="hotspot-node" style="top: 55%; left: 40%;">
+                <button type="button" class="hotspot-pin" aria-label="Inspect Baroque Keshi Pendant">2</button>
+                <div class="hotspot-card">
+                  <h4 class="hotspot-card-title">Baroque Keshi Pendant</h4>
+                  <p class="hotspot-card-price">₨ 2,800 <span style="font-size: 0.75rem; color: var(--color-slate-400);">(~$10 USD)</span></p>
+                  <button type="button" class="btn btn-obsidian btn-sm hotspot-add-btn" data-product-id="sm-002">Add to Bag</button>
+                </div>
+              </div>
+            </div>
+            <div class="lookbook-card-footer">
+              <div>
+                <h4 class="lookbook-look-title">Baroque Modernism</h4>
+                <span style="font-size: 0.75rem; color: var(--color-slate-400);">Daily Gold Essentials</span>
+              </div>
+              <span class="lookbook-look-price">₨ 2,800</span>
+            </div>
+          </div>
+
+          <!-- Look 3: Men's Regent Heritage -->
+          <div class="lookbook-card">
+            <div class="lookbook-media-wrap luster-sheen-target">
+              <img src="assets/images/collection_mens.jpg" alt="Men's Regent Heritage Look" loading="lazy">
+              <!-- Hotspot Pin -->
+              <div class="hotspot-node" style="top: 48%; left: 32%;">
+                <button type="button" class="hotspot-pin" aria-label="Inspect Zuljanah Kada">3</button>
+                <div class="hotspot-card">
+                  <h4 class="hotspot-card-title">Zuljanah Sculptural Kada</h4>
+                  <p class="hotspot-card-price">₨ 3,400 <span style="font-size: 0.75rem; color: var(--color-slate-400);">(~$12 USD)</span></p>
+                  <button type="button" class="btn btn-obsidian btn-sm hotspot-add-btn" data-product-id="sm-004">Add to Bag</button>
+                </div>
+              </div>
+            </div>
+            <div class="lookbook-card-footer">
+              <div>
+                <h4 class="lookbook-look-title">Men's Regent Edit</h4>
+                <span style="font-size: 0.75rem; color: var(--color-slate-400);">Heritage Kada & Cufflinks</span>
+              </div>
+              <span class="lookbook-look-price">₨ 3,400</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. WHAT OUR CUSTOMERS SAY (Matching Img 2 3-Card Carousel)
+         ========================================================================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">REAL STORIES</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-quote-card reveal-item">
+            <div class="quote-mark">“</div>
+            <p class="quote-text">
+              "The quality and attention to detail are absolutely unmatched. I ordered the Royal Nizam Choker for my wedding in Lahore and received endless compliments."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">AYESHA K. — LAHORE</span>
+              <span class="stars-gold">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-quote-card reveal-item">
+            <div class="quote-mark">“</div>
+            <p class="quote-text">
+              "Beautiful packaging, fast shipping via TCS, and even more stunning in person. Suche Moti is now my go-to for meaningful gifts in Islamabad."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">MAHNOOR T. — ISLAMABAD</span>
+              <span class="stars-gold">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-quote-card reveal-item">
+            <div class="quote-mark">“</div>
+            <p class="quote-text">
+              "Authentic pearls at transparent prices are so difficult to find in Karachi. The Zuljanah kada has incredible presence. Exceptional customer service."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">FARHAN M. — KARACHI</span>
+              <span class="stars-gold">★★★★★</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. DUAL BANNER: GIFT GUIDE & JOIN OUR COMMUNITY (Matching Img 2)
+         ========================================================================= -->
+    <section class="split-banner-section">
+      <div class="container">
+        
+        <div class="split-banner-grid">
+          
+          <!-- Left: Gift Guide -->
+          <div class="banner-gift-guide reveal-item">
+            <div class="gift-guide-media">
+              <img src="assets/images/packaging.jpg" alt="Suche Moti Luxury Unboxing Gift Guide" loading="lazy">
+            </div>
+            <div>
+              <span class="section-eyebrow" style="color: var(--color-gold-600); margin-bottom: 0.5rem;">THE PERFECT GIFT</span>
+              <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.75rem;">Gift Guide</h3>
+              <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.25rem;">
+                From weddings to anniversaries, find the perfect piece with 3 bespoke packaging tiers and personalized calligraphy.
+              </p>
+              <a href="#bestsellers" class="view-all-link" onclick="CartSystem.openDrawer();">
+                EXPLORE GIFT GUIDE
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Join Our Community -->
+          <div class="banner-community reveal-item">
+            <span class="craftsmanship-eyebrow" style="margin-bottom: 0.5rem;">STAY CONNECTED</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; color: #ffffff;">Join Our Community</h3>
+            <p style="font-size: 0.85rem; color: #b5c0bd;">
+              Be the first to know about new arrivals, exclusive offers, and special events.
+            </p>
+            
+            <form class="community-input-wrap" id="community-form">
+              <input type="email" placeholder="Enter your email address" class="community-input" required aria-label="Email address">
+              <button type="submit" class="btn-community-submit">SUBSCRIBE</button>
+            </form>
+
+            <div class="community-perks-row">
+              <span>✓ EXCLUSIVE OFFERS</span>
+              <span>✓ NEW ARRIVALS</span>
+              <span>✓ STYLE INSPIRATION</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         11. THE PEARL PURITY GUIDE (4 BOXED PILLARS AS IN DIRECTIVE #2!)
+         ========================================================================= -->
+    <section class="purity-guide-section" id="purity-guide">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">QUALITY ASSURANCE</span>
+          <h2 class="section-title">The Suche Moti Purity Standard</h2>
+          <p class="section-description">
+            Understanding the distinction between genuine organic nacre and commercial synthetic imitations.
+          </p>
+        </div>
+
+        <div class="pillars-grid reveal-item">
+          <div class="pillar-card">
+            <div class="pillar-number">01</div>
+            <h4 class="pillar-title">Luster & Glow</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-600);">Deep, mirror-like optical refraction created by hundreds of concentric aragonite calcium carbonate layers.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-number">02</div>
+            <h4 class="pillar-title">Solid Nacre</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-600);">Solid organic crystal deposition guaranteeing lifelong durability and resistance to discoloration.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-number">03</div>
+            <h4 class="pillar-title">Surface Purity</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-600);">Subtle natural fingerprint marks that definitively prove organic origin rather than machine-molded smooth plastic.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-number">04</div>
+            <h4 class="pillar-title">Artisan Knotting</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-600);">Individually double-knotted on 100% pure silk thread by master jewelers to prevent friction rubbing.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       12. LUXURY PROFESSIONAL FOOTER (Matching Img 2 Standard)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div>
+          <img src="assets/images/logo-text.png" alt="Suche Moti Logo" class="footer-brand-logo">
+          <p class="footer-brand-tagline">
+            Timeless beauty. Thoughtful design. Made to be cherished. Direct-to-consumer fine pearl and festive jewelry atelier based in Okara, Punjab.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/suche.moti1/" target="_blank" rel="noopener noreferrer">
+              <span>📷</span> Instagram
+            </a>
+            <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer">
+              <span>💬</span> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Shop Links -->
+        <div>
+          <h4 class="footer-heading">SHOP</h4>
+          <ul class="footer-links-list">
+            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'festive\']')?.click();">Women's Festive</a></li>
+            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'daily\']')?.click();">Daily Essentials</a></li>
+            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'mens\']')?.click();">Men's Collection</a></li>
+            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'pearls\']')?.click();">Pearl Specialties</a></li>
+            <li><a href="#lookbook">Bridal Lookbook</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: About & Craftsmanship -->
+        <div>
+          <h4 class="footer-heading">ABOUT</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about-craftsmanship">Our Craftsmanship</a></li>
+            <li><a href="#purity-guide">Pearl Purity Standard</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+            <li><a href="#bestsellers">Packaging Tiers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Assurances & Logistics -->
+        <div>
+          <h4 class="footer-heading">ASSURANCE</h4>
+          <div class="footer-assurances">
+            <div class="assurance-item">
+              <span class="assurance-icon">📦</span>
+              <span><strong>FREE SHIPPING</strong><br>On orders over PKR 3,000</span>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon">🔍</span>
+              <span><strong>100% QC INSPECTED</strong><br>Tamper-proof certified packaging</span>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon">🔒</span>
+              <span><strong>SECURE PAYMENTS</strong><br>Cash on Delivery & Raast</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Suche Moti. All rights reserved. Registered Atelier in Okara, Punjab, Pakistan.
+        </div>
+        <div>
+          <a href="#" style="color: inherit; text-decoration: none; margin-right: 1.5rem;">Privacy Policy</a>
+          <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       13. SLIDE-OUT LUXURY BAG / CART DRAWER
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <h3 class="cart-title">Your Bag</h3>
+        <span class="cart-count-pill" id="cart-header-count">(0 Pieces)</span>
+      </div>
+      <button type="button" class="drawer-close-btn" data-action="close-cart" aria-label="Close Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Meter -->
+    <div class="shipping-meter-wrap">
+      <p class="shipping-meter-text" id="shipping-meter-msg">
+        Add <strong>₨ 3,000</strong> more for <strong>Complimentary Nationwide Delivery</strong>!
+      </p>
+      <div class="shipping-progress-bar">
+        <div class="shipping-progress-fill" id="shipping-meter-fill"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable Body -->
+    <div class="cart-body">
+      <div id="cart-items-list">
+        <!-- Dynamically injected via CartSystem.render() -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="cart-empty-state" id="cart-empty-state">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin: 0 auto 1rem auto; color: var(--color-slate-400);">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <p style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-obsidian-900); margin-bottom: 0.5rem;">Your Bag is Empty</p>
+        <p style="font-size: 0.85rem;">Discover our handcrafted collections to add pure luster to your journey.</p>
+        <button type="button" class="btn btn-gold btn-sm" style="margin-top: 1.25rem;" onclick="CartSystem.closeDrawer(); document.getElementById('bestsellers').scrollIntoView();">Explore Vault</button>
+      </div>
+
+      <!-- Packaging Experience Option Inside Cart -->
+      <div class="cart-packaging-box" id="cart-packaging-picker">
+        <span class="cart-packaging-title">Choose Packaging Experience:</span>
+        
+        <div class="packaging-option-pill selected" data-packaging-tier="standard">
+          <span>Standard Velvet Pouch</span>
+          <span style="color: var(--color-success); font-weight: 600;">FREE</span>
+        </div>
+        
+        <div class="packaging-option-pill" data-packaging-tier="premium">
+          <span>Premium Magnetic Box + Note</span>
+          <span>+₨ 100</span>
+        </div>
+        
+        <div class="packaging-option-pill" data-packaging-tier="gift">
+          <span>The Royal Wax Seal Gift Edition</span>
+          <span>+₨ 200</span>
+        </div>
+      </div>
+
+      <!-- Promo Code Form -->
+      <form id="cart-promo-form" style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+        <input type="text" id="cart-promo-input" placeholder="Promo code (e.g. SUCHE10)" style="flex: 1; padding: 0.6rem 0.85rem; border: 1px solid var(--color-border-hairline); border-radius: 2px; font-size: 0.8rem; text-transform: uppercase;">
+        <button type="submit" class="btn btn-obsidian btn-sm">Apply</button>
+      </form>
+    </div>
+
+    <!-- Cart Summary Footer -->
+    <div class="cart-footer" id="cart-footer-summary">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal-val">₨ 0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Packaging</span>
+        <span id="cart-packaging-val">Complimentary Pouch</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Estimated Delivery (TCS/Leopards)</span>
+        <span id="cart-shipping-val">FREE</span>
+      </div>
+      <div class="cart-summary-row" id="cart-discount-row" style="display: none; color: var(--color-success);">
+        <span>VIP Discount (10% Off)</span>
+        <span id="cart-discount-val">-₨ 0</span>
+      </div>
+      <div class="cart-summary-row total">
+        <span>Grand Total</span>
+        <span id="cart-total-val" style="color: var(--color-gold-600);">₨ 0</span>
+      </div>
+      <button type="button" class="btn btn-gold cart-checkout-btn" id="cart-checkout-btn">
+        Proceed to Secure Checkout
+      </button>
+      <p style="text-align: center; font-size: 0.72rem; color: var(--color-slate-400); margin-top: 0.75rem;">
+        🔒 Insured Nationwide Delivery & Cash on Delivery Available
+      </p>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       14. QUICK-VIEW MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="quickview-modal" role="dialog" aria-modal="true" aria-label="Product Quick View">
+    <div class="quickview-container modal-spring">
+      <button type="button" class="modal-close-btn" id="quickview-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Modal Gallery Media -->
+      <div class="quickview-media">
+        <img src="assets/images/product_choker.jpg" alt="Product Inspection" class="quickview-media-main" id="quickview-main-image">
+        <div class="quickview-thumbnails" id="quickview-thumbnails">
+          <!-- Thumbnails injected via JS -->
+        </div>
+      </div>
+
+      <!-- Modal Details -->
+      <div class="quickview-content">
+        <span class="badge badge-gold" id="quickview-badge" style="width: fit-content; margin-bottom: 0.5rem;">Bestseller</span>
+        <h2 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.25rem;" id="quickview-title">Product Title</h2>
+        <div style="font-size: 1.35rem; font-weight: 700; color: var(--color-obsidian-900); margin-bottom: 1rem;" id="quickview-price">₨ 0</div>
+        
+        <p style="font-size: 0.9rem; color: var(--color-slate-600); line-height: 1.6; margin-bottom: 1.25rem;" id="quickview-desc">
+          Description text...
+        </p>
+
+        <!-- Technical Specification Sheet -->
+        <table class="quickview-specs-table">
+          <tbody>
+            <tr>
+              <th>Artisan Origin:</th>
+              <td id="spec-origin">Okara Atelier</td>
+            </tr>
+            <tr>
+              <th>Pearl Classification:</th>
+              <td id="spec-pearl-type">Grade AAA Freshwater</td>
+            </tr>
+            <tr>
+              <th>Diameter & Size:</th>
+              <td id="spec-diameter">8.0mm</td>
+            </tr>
+            <tr>
+              <th>Metal Architecture:</th>
+              <td id="spec-metal">22K Gold Vermeil</td>
+            </tr>
+            <tr>
+              <th>Quality Check:</th>
+              <td>Individually Inspected with Certificate</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Quantity & Add to Bag -->
+        <div style="display: flex; gap: 1rem; align-items: center; margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--color-border-hairline);">
+          <div class="cart-item-qty-controls" style="padding: 4px;">
+            <button type="button" class="qty-btn" onclick="QuickViewSystem.changeQty(-1)">−</button>
+            <span class="qty-val" id="quickview-qty-val">1</span>
+            <button type="button" class="qty-btn" onclick="QuickViewSystem.changeQty(1)">+</button>
+          </div>
+          <button type="button" class="btn btn-gold" id="quickview-add-to-bag" style="flex: 1;">
+            Add to Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       15. SIMULATED CHECKOUT MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="checkout-modal" role="dialog" aria-modal="true" aria-label="Simulated Checkout">
+    <div class="checkout-dialog modal-spring">
+      
+      <button type="button" class="modal-close-btn" id="checkout-close" aria-label="Close Checkout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <span class="section-eyebrow">FINAL STEP</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem;">Complete Your Order</h3>
+      <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.5rem;">
+        Enjoy complimentary insured delivery across Pakistan via TCS or Leopards Courier.
+      </p>
+
+      <form id="checkout-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-name">Full Name *</label>
+          <input type="text" id="checkout-name" required placeholder="e.g. Fatima Ali" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+        </div>
+
+        <div class="checkout-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-phone">WhatsApp Phone *</label>
+            <input type="tel" id="checkout-phone" required placeholder="0300-1234567" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-city">City *</label>
+            <input type="text" id="checkout-city" required placeholder="Lahore / Karachi / Okara" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+          </div>
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-address">Delivery Address *</label>
+          <textarea id="checkout-address" required rows="2" placeholder="House/Apartment #, Street, Sector" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;"></textarea>
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;">Select Payment Method</label>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Cash on Delivery (COD)" checked>
+              <span><strong>Cash on Delivery (COD)</strong> — Pay to TCS/Leopards Courier at your doorstep</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Direct Bank Transfer / Raast">
+              <span><strong>Direct Bank Transfer / Raast</strong> — Instant WhatsApp receipt verification</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Visa / Mastercard">
+              <span><strong>Debit / Credit Card (Visa / Mastercard)</strong></span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-solid-gold" style="margin-top: 1rem; padding: 1rem;">
+          Confirm Order & Generate Tracking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       16. ORDER SUCCESS CONFIRMATION MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="order-success-modal" role="dialog" aria-modal="true" aria-label="Order Placed Successfully">
+    <div class="order-success-dialog modal-spring">
+      <div style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.15); color: var(--color-gold-600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Order Confirmed</span>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.75rem;">Pure Elegance Is On Its Way</h3>
+      <p style="font-size: 0.9rem; color: var(--color-slate-600); margin-bottom: 1.5rem;">
+        Thank you, <strong id="success-client-name">Valued Patron</strong>. Your order is now being QC-inspected in our Okara atelier and prepared for priority dispatch to <strong id="success-order-city">Pakistan</strong> via TCS Express.
+      </p>
+      <div style="background: var(--color-pearl-cream); padding: 1rem; border-radius: 2px; font-size: 0.8rem; margin-bottom: 1.5rem; text-align: left;">
+        <div><strong>Payment Type:</strong> <span id="success-payment-type">CASH ON DELIVERY</span></div>
+        <div style="margin-top: 0.35rem;"><strong>Tracking Partner:</strong> TCS Express / Leopards Courier</div>
+        <div style="margin-top: 0.35rem;"><strong>Inclusions:</strong> Velvet Pouch, Certificate of Authenticity</div>
+      </div>
+      <button type="button" class="btn btn-obsidian" onclick="document.getElementById('order-success-modal').classList.remove('active');">
+        Return to Atelier Collection
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       17. LIVE SEARCH MODAL OVERLAY
+       ========================================================================= -->
+  <div class="modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Catalog">
+    <div class="search-dialog modal-spring">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-serif); font-size: 1.6rem;">Search The Vault</h4>
+        <button type="button" class="modal-close-btn" id="search-close" aria-label="Close search" style="position: static;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div style="position: relative;">
+        <input type="text" id="search-input" placeholder="Search by name, baroque, choker, kada, pearl grade..." style="width: 100%; padding: 1rem 1.25rem; font-size: 1rem; border: 1px solid var(--color-border-hairline); border-radius: 2px; outline: none;">
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-slate-400); margin-top: 0.75rem;">
+        Tip: Try typing "baroque", "choker", "jhumka", "kada", or "rings".
+      </p>
+    </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-serif); font-size: 1.6rem;">Search The Vault</h4>
+        <button type="button" class="modal-close-btn" id="search-close" aria-label="Close search" style="position: static;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div style="position: relative;">
+        <input type="text" id="search-input" placeholder="Search by name, baroque, choker, kada, pearl grade..." style="width: 100%; padding: 1rem 1.25rem; font-size: 1rem; border: 1px solid var(--color-border-hairline); border-radius: 2px; outline: none;">
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-slate-400); margin-top: 0.75rem;">
+        Tip: Try typing "baroque", "choker", "jhumka", "kada", or "rings".
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       18. TOAST NOTIFICATION CONTAINER
+       ========================================================================= -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Core Pure Vanilla JavaScript Modules -->
+  <script src="js/products-data.js?v=3"></script>
+  <script src="js/cart.js?v=3"></script>
+  <script src="js/wishlist.js?v=3"></script>
+  <script src="js/quickview.js?v=3"></script>
+  <script src="js/lookbook.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
+
+</body>
+</html>
