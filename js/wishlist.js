@@ -77,6 +77,26 @@ const WishlistSystem = {
   },
 
   bindEvents() {
+    // Header Wishlist Icon Click
+    const navBtn = document.getElementById('wishlist-nav-btn');
+    if (navBtn) {
+      navBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const count = this.items.length;
+        if (count === 0) {
+          window.showToast('Your Wishlist is currently empty. Tap the heart on any piece to save it.');
+        } else {
+          window.showToast(`You have ${count} piece${count > 1 ? 's' : ''} saved in your Wishlist.`);
+          const grid = document.getElementById('products-grid');
+          if (grid) {
+            grid.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            window.location.href = 'new-in.html';
+          }
+        }
+      });
+    }
+
     // Event delegation on document for wishlist buttons
     document.addEventListener('click', (e) => {
       const btn = e.target.closest('.card-wishlist-btn');

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Atelier — Suche Moti | Heritage, Craftsmanship & Founders</title>
+  
+  <!-- SEO & Brand Metadata -->
+  <meta name="description" content="Learn the story of Suche Moti: authentic direct-to-consumer pearl jewelry atelier based in Okara, Punjab. Founded by Saad Lodhi, Muqaddas Hanif, and Dua Safdar.">
+  <meta name="keywords" content="Suche Moti about, Okara pearl jewelry, Saad Lodhi, Muqaddas Hanif, Dua Safdar, Pakistani pearl artisans">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css?v=4">
+  <link rel="stylesheet" href="css/base.css?v=4">
+  <link rel="stylesheet" href="css/animations.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/main.css?v=4">
+</head>
+<body>
+
+  <!-- Top Announcement Ticker -->
+  <div class="top-ticker" role="region" aria-label="Announcement Bar">
+    <div class="top-ticker-text">
+      <span class="gold-bullet">✦</span>
+      <span>COMPLIMENTARY INSURED EXPRESS DELIVERY ACROSS PAKISTAN ON ALL ORDERS OVER PKR 3,000</span>
+      <span class="gold-bullet">✦</span>
+    </div>
+  </div>
+
+  <!-- Sticky Minimal Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <!-- Left Navigation Links -->
+      <nav class="nav-left-links" aria-label="Main Navigation">
+        <a href="new-in.html" class="nav-link">NEW IN</a>
+        <a href="categories.html" class="nav-link">CATEGORIES</a>
+        <a href="collections.html" class="nav-link">COLLECTIONS</a>
+        <a href="lookbook.html" class="nav-link">LOOKBOOK</a>
+        <a href="about.html" class="nav-link active">ABOUT</a>
+      </nav>
+
+      <!-- Center Brand Logo -->
+      <a href="index.html" class="nav-center-logo" aria-label="Suche Moti Home">
+        <img src="assets/images/logo-text.png" alt="Suche Moti Fine Jewelry" height="48">
+      </a>
+
+      <!-- Right Utility Actions -->
+      <div class="nav-right-utilities">
+        <button type="button" class="currency-toggle-btn" id="currency-toggle" aria-label="Toggle currency">
+          PKR ₨
+        </button>
+
+        <button type="button" class="nav-icon-btn" id="search-trigger" aria-label="Search catalog">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+
+        <button type="button" class="nav-icon-btn" id="wishlist-nav-btn" aria-label="View Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="nav-badge-count wishlist-badge-count" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="nav-icon-btn" data-action="open-cart" aria-label="Open Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="nav-badge-count cart-badge-count" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-label="Navigation Menu">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo-text.png" alt="Suche Moti" height="34">
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="new-in.html" class="mobile-link">New In & Best Sellers</a>
+        <a href="categories.html" class="mobile-link">Shop By Category (Rings, Necklaces...)</a>
+        <a href="collections.html" class="mobile-link">The 4 Collections</a>
+        <a href="lookbook.html" class="mobile-link">Royal Lookbook</a>
+        <a href="about.html" class="mobile-link active">Our Craftsmanship & Heritage</a>
+        <a href="index.html#purity-guide" class="mobile-link">Pearl Purity Standard</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <div class="mobile-currency-row">
+          <span>Currency:</span>
+          <button type="button" class="currency-toggle-btn" id="mobile-currency-btn" style="padding: 0.4rem 1rem;">PKR ₨</button>
+        </div>
+        <p style="font-size: 0.78rem; color: var(--color-slate-400); margin-top: 1rem;">
+          Complimentary insured delivery on orders over PKR 3,000 across Pakistan via TCS & Leopards.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Page Hero -->
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span class="current">About Our Atelier</span>
+        </div>
+        <h1 class="page-hero-title">
+          The Art of Fine <strong>Craftsmanship</strong>
+        </h1>
+        <p class="page-hero-subtitle">
+          Founded in Okara, Punjab, Suche Moti was born to revive the sacred heritage of royal Pakistani pearl jewelry. Honest artisan pricing, zero retail markups, and pure certified pearls.
+        </p>
+      </div>
+    </section>
+
+    <!-- Atelier Story & Craftsmanship -->
+    <section class="craftsmanship-section" id="craftsmanship" style="background-color: #0f1d1a; color: #ffffff;">
+      <div class="container">
+        <div class="craftsmanship-grid">
+          
+          <div class="reveal-item">
+            <span class="craftsmanship-eyebrow">OUR HERITAGE & MISSION</span>
+            <h2 class="craftsmanship-title">
+              Crafted With Purpose,<br>
+              Cherished for Generations
+            </h2>
+            <p class="craftsmanship-desc">
+              By partnering directly with master goldsmiths and silversmiths in Lahore, Karachi, and Okara, Suche Moti bypasses high-street mall rents and unnecessary distributor margins. Every rupee you invest goes straight into authentic pearls, 22K gold plating, and honest artisan labor.
+            </p>
+
+            <div class="craftsmanship-boxes-row">
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h4 class="craftsmanship-box-title">Ethically Sourced</h4>
+                  <p class="craftsmanship-box-desc">Certified authentic freshwater & South Sea baroque pearls paired with precious alloys.</p>
+                </div>
+              </div>
+
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <h4 class="craftsmanship-box-title">Expert Craftsmanship</h4>
+                  <p class="craftsmanship-box-desc">Double-knotted individually on mulberry silk thread by generational Pakistani master jewelers.</p>
+                </div>
+              </div>
+
+              <div class="craftsmanship-box-card">
+                <div class="craftsmanship-box-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <h4 class="craftsmanship-box-title">Timeless Quality</h4>
+                  <p class="craftsmanship-box-desc">100% individual piece QC inspection and Certificate of Authenticity with every creation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal-item" style="position: relative; display: flex; justify-content: center;">
+            <div class="craftsmanship-media-frame">
+              <img src="assets/images/collection_pearls.jpg" alt="Master jeweler handcrafting pearls">
+            </div>
+            <div class="craftsmanship-seal-stamp float-motion">
+              <span>✦</span>
+              <span>HANDCRAFTED<br>WITH PASSION</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3 Founders Section -->
+    <section style="padding: clamp(3.5rem, 6vw, 6rem) 0; background-color: var(--color-pearl-white);">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">LEADERSHIP & ATELIER DIRECTORS</span>
+          <h2 class="section-title">The Founding Team</h2>
+          <p class="section-description">
+            Meet the visionaries guiding Suche Moti's commitment to digital jewelry excellence and authentic Pakistani artisan preservation.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1040px; margin: 0 auto;" class="reveal-item">
+          
+          <!-- Founder 1: Saad Lodhi -->
+          <div style="background: #faf7f2; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 2rem 1.75rem; text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background: #12211e; color: var(--color-gold-400); font-family: var(--font-serif); font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; border: 2px solid var(--color-gold-500);">
+              SL
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.25rem;">Saad Lodhi</h3>
+            <span style="font-size: 0.74rem; font-weight: 700; color: var(--color-gold-600); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.85rem;">Operations & Artisan Sourcing</span>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.55;">
+              Spearheads direct guild partnerships with heritage silversmiths in Lahore, Karachi, and Okara. Oversees raw pearl procurement, hallmark inspections, and priority courier logistics across Pakistan.
+            </p>
+          </div>
+
+          <!-- Founder 2: Muqaddas Hanif -->
+          <div style="background: #faf7f2; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 2rem 1.75rem; text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background: #12211e; color: var(--color-gold-400); font-family: var(--font-serif); font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; border: 2px solid var(--color-gold-500);">
+              MH
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.25rem;">Muqaddas Hanif</h3>
+            <span style="font-size: 0.74rem; font-weight: 700; color: var(--color-gold-600); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.85rem;">Brand Identity & Digital Direction</span>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.55;">
+              Architect behind the high-fashion editorial visual language, social brand narrative (@suche.moti1), and creative direction. Bridges regal Mughal antiquity with contemporary modern minimalism.
+            </p>
+          </div>
+
+          <!-- Founder 3: Dua Safdar -->
+          <div style="background: #faf7f2; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 2rem 1.75rem; text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background: #12211e; color: var(--color-gold-400); font-family: var(--font-serif); font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; border: 2px solid var(--color-gold-500);">
+              DS
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.25rem;">Dua Safdar</h3>
+            <span style="font-size: 0.74rem; font-weight: 700; color: var(--color-gold-600); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.85rem;">Customer Experience & Concierge</span>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.55;">
+              Champions the patron journey, from bespoke bridal trunk show consultations to 3-tier luxury packaging unboxing rituals and dedicated WhatsApp VIP order concierge.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3-Tier Luxury Packaging Showcase -->
+    <section id="packaging" style="padding: clamp(3rem, 6vw, 5rem) 0; background-color: #faf7f2; border-top: 1px solid var(--color-border-hairline);">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">THE UNBOXING RITUAL</span>
+          <h2 class="section-title">3-Tier Luxury Packaging</h2>
+          <p class="section-description">
+            Every creation is preserved with museum-grade anti-tarnish lining and presentation.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1040px; margin: 0 auto;" class="reveal-item">
+          <div style="background: #ffffff; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 1.75rem; text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Tier 1 • Included</span>
+            <h4 style="font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 0.5rem;">Signature Velvet Pouch</h4>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">Double-lined emerald velvet travel pouch with gold braided drawstring and Certificate of Pearl Authenticity.</p>
+          </div>
+
+          <div style="background: #ffffff; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 1.75rem; text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Tier 2 • +₨ 450</span>
+            <h4 style="font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 0.5rem;">Magnetic Keepsake Box</h4>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">Rigid textured oyster box featuring hidden magnetic closure, satin pull-tab, and micro-suede display pillow.</p>
+          </div>
+
+          <div style="background: #ffffff; border: 1px solid var(--color-border-hairline); border-radius: 6px; padding: 1.75rem; text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Tier 3 • +₨ 950</span>
+            <h4 style="font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 0.5rem;">Wax Seal Gift Casket</h4>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">Handcrafted emerald casket tied with metallic grosgrain ribbon and stamped with our antique golden wax seal.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pearl Purity Standard Matrix -->
+    <section id="purity" class="purity-guide-section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-eyebrow">AUTHENTICITY & QC</span>
+          <h2 class="section-title">The 4-Pillar Purity Standard</h2>
+          <p class="section-description">
+            How our Okara gemological guild verifies every single pearl before priority dispatch.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card reveal-item">
+            <span class="pillar-number">01</span>
+            <h3 class="pillar-title">Deep Luster</h3>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">
+              Mirror-like reflective glow produced by dense concentric aragonite calcium carbonate crystals.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-item">
+            <span class="pillar-number">02</span>
+            <h3 class="pillar-title">Nacre Thickness</h3>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">
+              Harvested only after 3 to 5 years of uninterrupted oyster nurturing, guaranteeing structural longevity.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-item">
+            <span class="pillar-number">03</span>
+            <h3 class="pillar-title">Surface Purity</h3>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">
+              Over 90% blemish-free surface rating with zero artificial plastic coatings or synthetic varnishes.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-item">
+            <span class="pillar-number">04</span>
+            <h3 class="pillar-title">Natural Form</h3>
+            <p style="font-size: 0.82rem; color: var(--color-slate-600); line-height: 1.5;">
+              Celebration of organic symmetry—from perfectly spherical chokers to dramatic one-of-a-kind keshi baroque pearls.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <img src="assets/images/logo-text.png" alt="Suche Moti" class="footer-brand-logo">
+          <p class="footer-brand-tagline">
+            Timeless beauty. Thoughtful design. Made to be cherished. Direct-to-consumer fine pearl and festive jewelry atelier based in Okara, Punjab.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/suche.moti1/" target="_blank" rel="noopener noreferrer">
+              <span>📷</span> Instagram
+            </a>
+            <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer">
+              <span>💬</span> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">SHOP</h4>
+          <ul class="footer-links-list">
+            <li><a href="new-in.html">New In & Bestsellers</a></li>
+            <li><a href="categories.html?type=rings">Pearl Rings</a></li>
+            <li><a href="categories.html?type=necklaces">Chokers & Necklaces</a></li>
+            <li><a href="categories.html?type=earrings">Jhumkas & Earrings</a></li>
+            <li><a href="categories.html?type=bracelets">Kadas & Bangles</a></li>
+            <li><a href="collections.html">4 Signature Collections</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">ABOUT</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html">Our Atelier Heritage</a></li>
+            <li><a href="about.html#craftsmanship">Master Craftsmanship</a></li>
+            <li><a href="about.html#purity">Pearl Purity Standard</a></li>
+            <li><a href="lookbook.html">Royal Lookbook</a></li>
+            <li><a href="about.html#packaging">3-Tier Luxury Packaging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">ASSURANCE</h4>
+          <div class="footer-assurances">
+            <div class="assurance-item">
+              <span class="assurance-icon">📦</span>
+              <span><strong>FREE SHIPPING</strong><br>On orders over PKR 3,000</span>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon">🔍</span>
+              <span><strong>100% QC INSPECTED</strong><br>Tamper-proof certified packaging</span>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon">🔒</span>
+              <span><strong>SECURE PAYMENTS</strong><br>Cash on Delivery & Raast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Suche Moti. All rights reserved. Registered Atelier in Okara, Punjab, Pakistan.
+        </div>
+        <div>
+          <a href="#" style="color: inherit; text-decoration: none; margin-right: 1.5rem;">Privacy Policy</a>
+          <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <h3 class="cart-title">Your Bag</h3>
+        <span class="cart-count-pill" id="cart-header-count">(0 Pieces)</span>
+      </div>
+      <button type="button" class="drawer-close-btn" data-action="close-cart" aria-label="Close Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="shipping-meter-wrap">
+      <p class="shipping-meter-text" id="shipping-meter-msg">
+        Add <strong>₨ 3,000</strong> more for <strong>Complimentary Nationwide Delivery</strong>!
+      </p>
+      <div class="shipping-progress-bar">
+        <div class="shipping-progress-fill" id="shipping-meter-fill"></div>
+      </div>
+    </div>
+
+    <div class="cart-body">
+      <div id="cart-items-list"></div>
+      <div class="cart-packaging-module">
+        <h4 class="packaging-title">Choose Luxury Presentation</h4>
+        <div class="packaging-options-grid">
+          <label class="packaging-option-card active">
+            <input type="radio" name="packaging_tier" value="standard" checked>
+            <div class="packaging-card-content">
+              <strong>Signature Velvet Pouch</strong>
+              <span>Complimentary</span>
+            </div>
+          </label>
+          <label class="packaging-option-card">
+            <input type="radio" name="packaging_tier" value="premium">
+            <div class="packaging-card-content">
+              <strong>Magnetic Keepsake Box</strong>
+              <span>+₨ 450</span>
+            </div>
+          </label>
+          <label class="packaging-option-card">
+            <input type="radio" name="packaging_tier" value="gift">
+            <div class="packaging-card-content">
+              <strong>Wax Seal Gift Casket</strong>
+              <span>+₨ 950</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="promo-code-wrap">
+        <input type="text" id="promo-code-input" placeholder="Promo code (Try SUCHE10)" class="promo-input">
+        <button type="button" id="apply-promo-btn" class="promo-btn">Apply</button>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-totals-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₨ 0</span>
+      </div>
+      <div class="cart-totals-row" id="cart-discount-row" style="display: none; color: var(--color-gold-600);">
+        <span>VIP Privilege (10%)</span>
+        <span id="cart-discount">-₨ 0</span>
+      </div>
+      <div class="cart-totals-row">
+        <span>Insured Courier Delivery</span>
+        <span id="cart-shipping">₨ 250</span>
+      </div>
+      <div class="cart-totals-row grand-total">
+        <span>Total</span>
+        <span id="cart-grand-total">₨ 0</span>
+      </div>
+      <button type="button" class="btn btn-gold cart-checkout-btn" id="cart-checkout-btn">
+        Proceed to Secure Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Simulated Checkout Modal -->
+  <div class="modal-backdrop" id="checkout-modal" role="dialog" aria-modal="true" aria-label="Simulated Checkout">
+    <div class="checkout-dialog modal-spring">
+      <button type="button" class="modal-close-btn" id="checkout-close" aria-label="Close Checkout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <span class="section-eyebrow">FINAL STEP</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem;">Complete Your Order</h3>
+      <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.5rem;">
+        Enjoy complimentary insured delivery across Pakistan via TCS or Leopards Courier.
+      </p>
+
+      <form id="checkout-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-name">Full Name *</label>
+          <input type="text" id="checkout-name" required placeholder="e.g. Fatima Ali" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+        </div>
+
+        <div class="checkout-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-phone">WhatsApp Phone *</label>
+            <input type="tel" id="checkout-phone" required placeholder="0300-1234567" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-city">City *</label>
+            <input type="text" id="checkout-city" required placeholder="Lahore / Karachi / Okara" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;">
+          </div>
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem;" for="checkout-address">Delivery Address *</label>
+          <textarea id="checkout-address" required rows="2" placeholder="House/Apartment #, Street, Sector" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-hairline); border-radius: 2px;"></textarea>
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;">Select Payment Method</label>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Cash on Delivery (COD)" checked>
+              <span><strong>Cash on Delivery (COD)</strong> — Pay to TCS/Leopards Courier at your doorstep</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Direct Bank Transfer / Raast">
+              <span><strong>Direct Bank Transfer / Raast</strong> — Instant WhatsApp receipt verification</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--color-border-hairline); cursor: pointer;">
+              <input type="radio" name="payment_method" value="Visa / Mastercard">
+              <span><strong>Debit / Credit Card (Visa / Mastercard)</strong></span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-solid-gold" style="margin-top: 1rem; padding: 1rem;">
+          Confirm Order & Generate Tracking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal-backdrop" id="order-success-modal" role="dialog" aria-modal="true" aria-label="Order Placed Successfully">
+    <div class="order-success-dialog modal-spring">
+      <div style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.15); color: var(--color-gold-600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Order Confirmed</span>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.75rem;">Pure Elegance Is On Its Way</h3>
+      <p style="font-size: 0.9rem; color: var(--color-slate-600); margin-bottom: 1.5rem;">
+        Thank you, <strong id="success-client-name">Valued Patron</strong>. Your order is now being QC-inspected in our Okara atelier and prepared for priority dispatch to <strong id="success-order-city">Pakistan</strong> via TCS Express.
+      </p>
+      <div style="background: var(--color-pearl-cream); padding: 1rem; border-radius: 2px; font-size: 0.8rem; margin-bottom: 1.5rem; text-align: left;">
+        <div><strong>Payment Type:</strong> <span id="success-payment-type">CASH ON DELIVERY</span></div>
+        <div style="margin-top: 0.35rem;"><strong>Tracking Partner:</strong> TCS Express / Leopards Courier</div>
+        <div style="margin-top: 0.35rem;"><strong>Inclusions:</strong> Velvet Pouch, Certificate of Authenticity</div>
+      </div>
+      <button type="button" class="btn btn-obsidian" onclick="document.getElementById('order-success-modal').classList.remove('active');">
+        Return to Atelier Collection
+      </button>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Catalog">
+    <div class="search-dialog modal-spring">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-serif); font-size: 1.6rem;">Search The Vault</h4>
+        <button type="button" class="modal-close-btn" id="search-close" aria-label="Close search" style="position: static;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div style="position: relative;">
+        <input type="text" id="search-input" placeholder="Search by name, baroque, choker, kada, pearl grade..." style="width: 100%; padding: 1rem 1.25rem; font-size: 1rem; border: 1px solid var(--color-border-hairline); border-radius: 2px; outline: none;">
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-slate-400); margin-top: 0.75rem;">
+        Tip: Try typing "baroque", "choker", "jhumka", "kada", or "rings".
+      </p>
+    </div>
+  </div>
+
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/products-data.js?v=4"></script>
+  <script src="js/cart.js?v=4"></script>
+  <script src="js/wishlist.js?v=4"></script>
+  <script src="js/quickview.js?v=4"></script>
+  <script src="js/lookbook.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.App) window.App.init();
+    });
+  </script>
+</body>
+</html>
+

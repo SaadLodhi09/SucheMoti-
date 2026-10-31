@@ -43,6 +43,9 @@ const App = {
   searchQuery: '',
 
   init() {
+    if (this.initialized) return;
+    this.initialized = true;
+    this.highlightActiveNav();
     this.initHeaderScroll();
     this.initCurrencyToggle();
     this.initMobileMenu();
@@ -57,6 +60,21 @@ const App = {
     if (window.WishlistSystem) window.WishlistSystem.init();
     if (window.QuickViewSystem) window.QuickViewSystem.init();
     if (window.LookbookSystem) window.LookbookSystem.init();
+  },
+
+  // Highlight Current Active Page in Navigation
+  highlightActiveNav() {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link, .mobile-link').forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+      const target = href.split('#')[0];
+      if (target === currentPath || (currentPath === '' && target === 'index.html')) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
   },
 
   // 1. Header Blur on Scroll
@@ -139,19 +157,50 @@ const App = {
 
   // 3. Product Catalog Grid & Filters
   initProductCatalog() {
+    // Read URL Search Parameters (e.g. ?type=rings or ?category=festive)
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('type') || urlParams.get('category') || urlParams.get('cat');
+    const sortParam = urlParams.get('sort');
+
+    if (catParam) {
+      this.currentCategory = catParam.toLowerCase();
+    }
+
     // Category Filter Pills
-    document.querySelectorAll('.filter-pill').forEach(pill => {
-      pill.addEventListener('click', (e) => {
-        document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        this.currentCategory = pill.getAttribute('data-category');
-        this.renderProducts();
+    const pills = document.querySelectorAll('.filter-pill');
+    if (pills.length > 0) {
+      let matchedPill = false;
+      pills.forEach(pill => {
+        const cat = pill.getAttribute('data-category');
+        if (cat === this.currentCategory) {
+          pill.classList.add('active');
+          matchedPill = true;
+        } else {
+          pill.classList.remove('active');
+        }
+
+        pill.addEventListener('click', (e) => {
+          pills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          this.currentCategory = pill.getAttribute('data-category');
+          this.renderProducts();
+        });
       });
-    });
+
+      // If URL param didn't match any pill, activate 'all' pill
+      if (!matchedPill && this.currentCategory !== 'all') {
+        const allPill = document.querySelector('.filter-pill[data-category="all"]');
+        if (allPill && !catParam) allPill.classList.add('active');
+      }
+    }
 
     // Sorting Dropdown
     const sortSelect = document.getElementById('catalog-sort');
     if (sortSelect) {
+      if (sortParam) {
+        this.currentSort = sortParam;
+        sortSelect.value = sortParam;
+      }
       sortSelect.addEventListener('change', (e) => {
         this.currentSort = e.target.value;
         this.renderProducts();
@@ -181,9 +230,14 @@ const App = {
 
     let list = [...SUCHE_MOTI_PRODUCTS];
 
-    // Filter by Category
+    // Filter by Category or itemType
     if (this.currentCategory !== 'all') {
-      list = list.filter(p => p.category === this.currentCategory || p.subCategory === this.currentCategory);
+      const c = this.currentCategory.toLowerCase();
+      list = list.filter(p => 
+        (p.category && p.category.toLowerCase() === c) || 
+        (p.subCategory && p.subCategory.toLowerCase() === c) ||
+        (p.itemType && p.itemType.toLowerCase() === c)
+      );
     }
 
     // Filter by Search Query

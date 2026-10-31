@@ -15,12 +15,12 @@
   <meta property="og:image" content="assets/images/hero.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Core Stylesheets (Version 3 Cache-Bust) -->
-  <link rel="stylesheet" href="css/variables.css?v=3">
-  <link rel="stylesheet" href="css/base.css?v=3">
-  <link rel="stylesheet" href="css/animations.css?v=3">
-  <link rel="stylesheet" href="css/components.css?v=3">
-  <link rel="stylesheet" href="css/main.css?v=3">
+  <!-- Core Stylesheets (Version 4 Cache-Bust) -->
+  <link rel="stylesheet" href="css/variables.css?v=4">
+  <link rel="stylesheet" href="css/base.css?v=4">
+  <link rel="stylesheet" href="css/animations.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/main.css?v=4">
 </head>
 <body>
 
@@ -50,16 +50,17 @@
         </svg>
       </button>
 
-      <!-- Left Navigation Links (Desktop) -->
+      <!-- Left Navigation Links (Desktop — Standalone Webpages) -->
       <nav class="nav-left-links" aria-label="Main Navigation">
-        <a href="#bestsellers" class="nav-link">NEW IN</a>
-        <a href="#featured-collections" class="nav-link">COLLECTIONS</a>
-        <a href="#lookbook" class="nav-link">LOOKBOOK</a>
-        <a href="#about-craftsmanship" class="nav-link">ABOUT</a>
+        <a href="new-in.html" class="nav-link">NEW IN</a>
+        <a href="categories.html" class="nav-link">CATEGORIES</a>
+        <a href="collections.html" class="nav-link">COLLECTIONS</a>
+        <a href="lookbook.html" class="nav-link">LOOKBOOK</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
       </nav>
 
       <!-- Center Official Brand Logo (From User Uploaded Asset) -->
-      <a href="#hero" class="nav-center-logo" aria-label="Suche Moti Home">
+      <a href="index.html" class="nav-center-logo" aria-label="Suche Moti Home">
         <img src="assets/images/logo-text.png" alt="Suche Moti Fine Jewelry" height="48">
       </a>
 
@@ -79,7 +80,7 @@
         </button>
 
         <!-- Wishlist Button -->
-        <button type="button" class="nav-icon-btn" id="wishlist-nav-btn" aria-label="View Wishlist" onclick="document.getElementById('bestsellers').scrollIntoView();">
+        <button type="button" class="nav-icon-btn" id="wishlist-nav-btn" aria-label="View Wishlist">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
@@ -111,12 +112,13 @@
     </div>
     <div class="mobile-nav-body">
       <nav class="mobile-nav-links">
-        <a href="#bestsellers" class="mobile-link">New In & Best Sellers</a>
-        <a href="#featured-collections" class="mobile-link">The 4 Collections</a>
-        <a href="#lookbook" class="mobile-link">Royal Lookbook</a>
-        <a href="#about-craftsmanship" class="mobile-link">Our Craftsmanship</a>
-        <a href="#purity-guide" class="mobile-link">Pearl Purity Standard</a>
-        <a href="#testimonials" class="mobile-link">Customer Reviews</a>
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="new-in.html" class="mobile-link">New In & Best Sellers</a>
+        <a href="categories.html" class="mobile-link">Shop By Category (Rings, Necklaces...)</a>
+        <a href="collections.html" class="mobile-link">The 4 Collections</a>
+        <a href="lookbook.html" class="mobile-link">Royal Lookbook</a>
+        <a href="about.html" class="mobile-link">Our Craftsmanship & Heritage</a>
+        <a href="index.html#purity-guide" class="mobile-link">Pearl Purity Standard</a>
       </nav>
       <div class="mobile-nav-footer">
         <div class="mobile-currency-row">
@@ -150,7 +152,7 @@
               Exquisite designs, ethically crafted to celebrate every moment that matters. Discover genuine freshwater pearls, royal Mughal chokers, and designer daily essentials handcrafted by master artisans in Pakistan.
             </p>
             <div>
-              <a href="#featured-collections" class="btn-hero-dark">
+              <a href="collections.html" class="btn-hero-dark">
                 SHOP THE COLLECTION
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -220,6 +222,102 @@
               <p class="trust-box-desc">Handcrafted in Okara, Lahore & Karachi with zero retail markups.</p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4b. SHOP BY CATEGORY (Choose between Rings, Necklaces, Earrings, Bracelets)
+         ========================================================================= -->
+    <section class="category-showcase-section" id="categories" aria-label="Shop By Category">
+      <div class="container">
+        <div class="section-header reveal-item" style="margin-bottom: 1.5rem;">
+          <span class="section-eyebrow">EXPLORE BY SILHOUETTE</span>
+          <h2 class="section-title">Shop by Category</h2>
+        </div>
+
+        <div class="section-diamond-divider">
+          <span class="diamond-icon">◆</span>
+        </div>
+
+        <div class="category-grid-4col">
+          
+          <!-- Category 1: Rings -->
+          <a href="categories.html?type=rings" class="category-card reveal-item">
+            <div class="category-card-media luster-sheen-target">
+              <span class="category-card-badge">Popular</span>
+              <img src="assets/images/collection_daily.jpg" alt="Pearl & Fine Rings Collection" loading="lazy">
+            </div>
+            <div class="category-card-info">
+              <div class="category-card-name">
+                <span>Rings</span>
+                <span class="category-card-count">Solitaires & Bands</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--color-slate-600); margin: 0.2rem 0;">Dainty AAA freshwater solitaire stacking bands & organic baroque cocktail rings.</p>
+              <span class="category-card-cta">
+                Explore Rings 
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Category 2: Necklaces & Chokers -->
+          <a href="categories.html?type=necklaces" class="category-card reveal-item">
+            <div class="category-card-media luster-sheen-target">
+              <span class="category-card-badge">Signature</span>
+              <img src="assets/images/product_choker.jpg" alt="Pearl Necklaces & Royal Chokers" loading="lazy">
+            </div>
+            <div class="category-card-info">
+              <div class="category-card-name">
+                <span>Necklaces & Chokers</span>
+                <span class="category-card-count">Chokers & Pendants</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--color-slate-600); margin: 0.2rem 0;">Royal multi-strand Nizam chokers, opera malas, and raw keshi gold pendants.</p>
+              <span class="category-card-cta">
+                Explore Necklaces 
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Category 3: Earrings & Jhumkas -->
+          <a href="categories.html?type=earrings" class="category-card reveal-item">
+            <div class="category-card-media luster-sheen-target">
+              <span class="category-card-badge">Bestseller</span>
+              <img src="assets/images/collection_festive.jpg" alt="Pearl Earrings and Kundan Jhumkas" loading="lazy">
+            </div>
+            <div class="category-card-info">
+              <div class="category-card-name">
+                <span>Earrings & Jhumkas</span>
+                <span class="category-card-count">Drops & Hoops</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--color-slate-600); margin: 0.2rem 0;">Mughal dome kundan jhumkas, South Sea drops, and lightweight daily huggie hoops.</p>
+              <span class="category-card-cta">
+                Explore Earrings 
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Category 4: Bracelets & Kadas -->
+          <a href="categories.html?type=bracelets" class="category-card reveal-item">
+            <div class="category-card-media luster-sheen-target">
+              <span class="category-card-badge">Handcrafted</span>
+              <img src="assets/images/collection_mens.jpg" alt="Pearl Bracelets and Brass Kadas" loading="lazy">
+            </div>
+            <div class="category-card-info">
+              <div class="category-card-name">
+                <span>Bracelets & Kadas</span>
+                <span class="category-card-count">Cuffs & Bangles</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--color-slate-600); margin: 0.2rem 0;">Textured antique brass kadas, twin-pearl bypass cuffs, and paperclip chains.</p>
+              <span class="category-card-cta">
+                Explore Bracelets 
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -302,8 +400,8 @@
             <span class="section-eyebrow" style="margin-bottom: 0.35rem;">MOST LOVED</span>
             <h2 class="section-title" style="margin-bottom: 0;">Best Sellers</h2>
           </div>
-          <a href="#bestsellers" class="view-all-link" onclick="document.querySelector('[data-category=\'all\']')?.click();">
-            VIEW ALL
+          <a href="new-in.html" class="view-all-link">
+            VIEW ALL NEW IN
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -380,7 +478,7 @@
               </div>
             </div>
 
-            <a href="#purity-guide" class="btn btn-gold btn-sm">LEARN OUR STORY &rarr;</a>
+            <a href="about.html" class="btn btn-gold btn-sm">LEARN OUR STORY &rarr;</a>
           </div>
 
           <!-- Right Column: Circular Artisan Photo Frame + Seal Stamp (Matching Img 2) -->
@@ -561,7 +659,7 @@
               <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.25rem;">
                 From weddings to anniversaries, find the perfect piece with 3 bespoke packaging tiers and personalized calligraphy.
               </p>
-              <a href="#bestsellers" class="view-all-link" onclick="CartSystem.openDrawer();">
+              <a href="new-in.html" class="view-all-link">
                 EXPLORE GIFT GUIDE
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -666,11 +764,12 @@
         <div>
           <h4 class="footer-heading">SHOP</h4>
           <ul class="footer-links-list">
-            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'festive\']')?.click();">Women's Festive</a></li>
-            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'daily\']')?.click();">Daily Essentials</a></li>
-            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'mens\']')?.click();">Men's Collection</a></li>
-            <li><a href="#bestsellers" onclick="document.querySelector('[data-category=\'pearls\']')?.click();">Pearl Specialties</a></li>
-            <li><a href="#lookbook">Bridal Lookbook</a></li>
+            <li><a href="new-in.html">New In & Bestsellers</a></li>
+            <li><a href="categories.html?type=rings">Pearl Rings</a></li>
+            <li><a href="categories.html?type=necklaces">Chokers & Necklaces</a></li>
+            <li><a href="categories.html?type=earrings">Jhumkas & Earrings</a></li>
+            <li><a href="categories.html?type=bracelets">Kadas & Bangles</a></li>
+            <li><a href="collections.html">4 Signature Collections</a></li>
           </ul>
         </div>
 
@@ -678,10 +777,11 @@
         <div>
           <h4 class="footer-heading">ABOUT</h4>
           <ul class="footer-links-list">
-            <li><a href="#about-craftsmanship">Our Craftsmanship</a></li>
-            <li><a href="#purity-guide">Pearl Purity Standard</a></li>
-            <li><a href="#testimonials">Client Testimonials</a></li>
-            <li><a href="#bestsellers">Packaging Tiers</a></li>
+            <li><a href="about.html">Our Atelier Heritage</a></li>
+            <li><a href="about.html#craftsmanship">Master Craftsmanship</a></li>
+            <li><a href="about.html#purity">Pearl Purity Standard</a></li>
+            <li><a href="lookbook.html">Royal Lookbook</a></li>
+            <li><a href="about.html#packaging">3-Tier Luxury Packaging</a></li>
           </ul>
         </div>
 
@@ -1014,12 +1114,18 @@
   <div id="toast-container" aria-live="polite"></div>
 
   <!-- Core Pure Vanilla JavaScript Modules -->
-  <script src="js/products-data.js?v=3"></script>
-  <script src="js/cart.js?v=3"></script>
-  <script src="js/wishlist.js?v=3"></script>
-  <script src="js/quickview.js?v=3"></script>
-  <script src="js/lookbook.js?v=3"></script>
-  <script src="js/app.js?v=3"></script>
+  <script src="js/products-data.js?v=4"></script>
+  <script src="js/cart.js?v=4"></script>
+  <script src="js/wishlist.js?v=4"></script>
+  <script src="js/quickview.js?v=4"></script>
+  <script src="js/lookbook.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.App) window.App.init();
+    });
+  </script>
 
 </body>
 </html>

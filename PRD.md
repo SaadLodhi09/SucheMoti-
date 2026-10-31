@@ -37,16 +37,17 @@
 
 ## 3. Site Architecture & Feature Specifications
 
-### 3.1 Header & Luxury Navigation
-- Top announcement banner with carousel/ticker (TCS/Leopards 1–3 day delivery across Pakistan, Free delivery over PKR 3,000, Purity Certificate).
-- Sticky glassmorphic navbar with backdrop-blur.
-- Main navigation (Official Collections):
-  1. `Women's Festive Wear` (Heavy bridal sets, Jhumkas, Maang Tikkas)
-  2. `Daily Essentials` (Minimalist rings, sleek bracelets, chains, earrings)
-  3. `Men's Collection` (Statement rings, metallic kadas, cufflinks)
-  4. `Pearl Specialties` (Baroque pendants, Nizam chokers, pearl drops)
-  5. `Packaging Experience` (3 Tiers: Standard, Premium, Gift Edition)
-- Right utility bar: Live search toggle, Currency switcher (PKR ₨ / USD $), Wishlist badge, Cart drawer badge with animated counter.
+### 3.1 Header & Multi-Page Navigation
+- Top announcement banner with express delivery notice (Free nationwide express delivery over PKR 3,000, 100% Certified Pearl Purity).
+- Sticky minimal navbar with centered official Suche Moti logo, desktop links, and mobile slide-out drawer.
+- **Multi-Page Site Structure (Dedicated Webpages):**
+  1. `Home` (`index.html`) — Brand hero, guarantees, "Shop By Category" showcase, curated highlights, testimonials, purity standard.
+  2. `New In` (`new-in.html`) — Storefront catalog for latest arrivals and bestsellers with live filtering and sorting.
+  3. `Categories` (`categories.html`) — Dedicated category browser (Rings, Necklaces & Chokers, Earrings, Bracelets & Kadas, Men's Vault).
+  4. `Collections` (`collections.html`) — Dedicated page for the 4 official collections (Festive Wear, Daily Essentials, Men's Collection, Pearl Specialties).
+  5. `Lookbook` (`lookbook.html`) — Interactive "Shop The Look" editorial gallery with pulsating hotspots and popovers.
+  6. `About` (`about.html`) — Heritage atelier story (Okara, Lahore, Karachi), master craftsmanship, 3 packaging tiers, and founders.
+- Right utility bar: Live search toggle, Currency switcher (PKR ₨ / USD $), Wishlist counter, Slide-out Cart Drawer with localStorage synchronization across all pages.
 
 ### 3.2 Hero Section (Haute Couture Editorial)
 - Asymmetrical split layout with high-impact pearl jewelry imagery and kinetic typography.

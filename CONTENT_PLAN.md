@@ -12,7 +12,7 @@
 | **Origin & Base** | Okara, Punjab, Pakistan (Handcrafted & sourced from artisan guilds in Lahore, Karachi & Okara) |
 | **Business Model** | Direct-to-Consumer (B2C) Premium Online Jewelry Atelier |
 | **Core Value Proposition** | Bridges traditional Pakistani jewelry artistry with modern digital retail convenience — designer-style pieces at accessible prices with luxury unboxing. |
-| **Founding Team** | Saad Lodhi (Operations), Muqaddas Hanif (Marketing), Ghulam Mustafa (Quality Control), Dua Safdar (Customer Experience) |
+| **Founding Team** | Saad Lodhi (Operations & Sourcing), Muqaddas Hanif (Brand & Marketing), Dua Safdar (Customer Experience) |
 | **Official Socials** | Instagram: `@suche.moti1` \| TikTok: `@suche.moti` \| Email: `contact@suchemoti.com` |
 
 ---
